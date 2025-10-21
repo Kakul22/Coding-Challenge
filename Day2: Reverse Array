@@ -1,0 +1,13 @@
+# reverse an arrray 
+class Solution {
+    public void reverseArray(int arr[]) {
+        int n=arr.length;
+        int temp;
+        for(int i=0;i<n/2;i++){                # run the loop till the halflength of the array 
+            temp=arr[i];
+            arr[i]=arr[n-i-1];            # n-i-1 is the mirror index (find the mirror  position value of arr[i])
+            arr[n-i-1]=temp;
+        }
+        
+    }
+}
