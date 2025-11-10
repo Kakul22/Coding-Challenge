@@ -1,0 +1,18 @@
+// Single number by Array list 
+class Solution {
+    public int singleNumber(int[] nums) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int num:nums){
+            if(list.contains(num)){                          // if element of the array is found in the list then remove the number (as no duplicates should be stored in array)
+                list.remove(Integer.valueOf(num));
+            }
+            else{
+                list.add(num);                           // ef not then add that element in the list 
+            }
+        }
+        return list.get(0);
+
+
+        
+    }
+}
