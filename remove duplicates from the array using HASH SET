@@ -1,0 +1,21 @@
+// count the number of duplicates from the array and print the final one after removing duplicates
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class countduplicates {
+    public static int count(int arr[]){
+        Set<Integer> st = new HashSet<>();
+        for(int val:arr){
+            st.add(val);
+
+        }
+        System.out.println(st);
+        return arr.length-st.size();
+
+    }
+    public static void main(String[] args){
+        int arr[]= {2,2,3,3,4,4,4,4,11,56,23,23,18,18,18,18};
+        System.out.println(count(arr));
+    }
+}
