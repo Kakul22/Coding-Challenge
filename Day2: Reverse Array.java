@@ -1,4 +1,4 @@
-# reverse an arrray 
+//reverse an arrray 
 class Solution {
     public void reverseArray(int arr[]) {
         int n=arr.length;
