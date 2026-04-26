@@ -1,14 +1,14 @@
 class Solution {
     public int minAddToMakeValid(String s) {
-        Stack<Character> st=new Stack<>();
-        int moves=0;
+        Stack<Character> st= new Stack<>();
+        int count=0;
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)=='('){
                 st.push(s.charAt(i));
             }
             else{
                 if(st.isEmpty()){
-                    moves++;
+                    count++;
                 }
                 else{
                     st.pop();
@@ -16,9 +16,9 @@ class Solution {
             }
         }
         while(!st.isEmpty()){
-            moves++;
+            count++;
             st.pop();
         }
-        return moves; 
+        return count;
     }
 }
