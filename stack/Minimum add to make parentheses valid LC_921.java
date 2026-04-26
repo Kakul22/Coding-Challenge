@@ -22,3 +22,30 @@ class Solution {
         return count;
     }
 }
+
+
+
+
+///  second method using string //
+
+class Solution {
+    public int minAddToMakeValid(String s) {
+        int open=0;
+        int res=0;
+
+        for (char c:s.toCharArray()) {
+            if (c == '(') {
+                open++;
+            } 
+            else{
+                if(open>0){
+                    open--;   
+                }
+                else{
+                    res++;    
+                }
+            }
+        }
+        return res + open; 
+    }
+}
