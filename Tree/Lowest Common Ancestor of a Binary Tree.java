@@ -21,3 +21,18 @@ class Solution {
         
     }
 }
+
+
+        
+          3
+         / \
+        5   1
+       / \ / \
+      6  2 0  8
+        / \
+       7   4
+
+p = 5
+q = 1
+3  
+as   3 has both 5 and 1 below it  and it is common ancestor.  
